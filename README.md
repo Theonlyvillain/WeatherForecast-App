@@ -81,8 +81,11 @@ class WeatherAdapter(
 
 class DetailedViewActivity : AppCompatActivity() {
 
+!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detailed_view)
     }
 }
+[Display !](https://github.com/Theonlyvillain/WeatherForecast-App/assets/167142766/66774fe2-8877-4ad1-8641-7d2a3a8ec1d6)
+
