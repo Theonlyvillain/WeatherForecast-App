@@ -1,0 +1,47 @@
+Psuedocode:
+
+// Initialize variables
+weatherDataArray = []
+
+// Define WeatherData class
+class WeatherData:
+    day
+    temperature
+
+// Populate weatherDataArray with dummy data
+weatherDataArray.add(WeatherData("Monday", 20))
+weatherDataArray.add(WeatherData("Tuesday", 22))
+weatherDataArray.add(WeatherData("Wednesday", 25))
+weatherDataArray.add(WeatherData("Thursday", 18))
+weatherDataArray.add(WeatherData("Friday", 21))
+weatherDataArray.add(WeatherData("Saturday", 23))
+weatherDataArray.add(WeatherData("Sunday", 24))
+
+// Calculate average temperature
+totalTemperature = 0
+for data in weatherDataArray:
+    totalTemperature += data.temperature
+averageTemperature = totalTemperature / weatherDataArray.size()
+
+// Display main screen
+displayMainScreen()
+
+// Main screen function
+function displayMainScreen():
+    // Display weekly forecast with weatherDataArray
+    for data in weatherDataArray:
+        print(data.day + ": " + data.temperature + "°C")
+    print("Average Temperature for the Week: " + averageTemperature + "°C")
+    // Display buttons for detailed view and exit
+
+// On click of detailed view button
+function onClickDetailedViewButton():
+    displayDetailedViewScreen()
+
+// Detailed view screen function
+function displayDetailedViewScreen():
+    // Display detailed view for each day in weatherDataArray
+    for data in weatherDataArray:
+        print("Day: " + data.day)
+        print("Temperature: " + data.temperature + "°C")
+        // Display additional weather details like humidity, wind speed, etc.
